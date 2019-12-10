@@ -60,6 +60,11 @@ header .account li:last-child {
   padding: 0;
 }
 
+header .account li span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
 header .account a, p {
   font-size: .9em;
 }
@@ -123,7 +128,8 @@ header select {
   text-transform: uppercase;
   border: none;
   padding: 0 5px;
-  margin-top: 10px
+  margin-top: 10px;
+  outline: none;
 }
 
 /*banner*/
@@ -272,19 +278,27 @@ header select {
   header .menu li:nth-child(2) {
     margin: 0 100px 0 0;    
   }
+
+  header .menu a {
+    line-height: 2.5em;
+  }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 840px) {
   body, p, a, h1, h2, h3, ul, li  {
     font-size: 12px
   }
   
   header .menu li {
-    margin: 0 75px 0 0;    
+    margin: 0 75px 0 0;
   }
 
   header .social li {
-    margin: 0 15px;
+    margin: 0 15px; 
+  }
+  
+  header .menu a {
+    line-height: 1em;
   }
 
   .banner a {
@@ -292,6 +306,28 @@ header select {
     height: 8px;
   }
 }
+
+@media only screen and (max-width: 740px) {
+  header .right {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header .social {
+    margin: 5px auto;
+  }
+
+  header .social li {
+    margin: 0 5px;
+  }
+}
+
+
+@media only screen and (max-width: 630px) {
+  header .social li {
+    margin: 5px 10px 0 20px;
+  }
+
 
 @media only screen and (max-width: 600px) {
   body, p, a, h1, h2, h3, ul, li {
@@ -312,7 +348,11 @@ header select {
   }
 
   header .menu a {
-    font-size: 1.4em;    
+    font-size: 1.4em;  
+    line-height: 2.5em;     
+  }
+  
+  header .social li {
+    margin: 5px 15px;
   }
 }
-
