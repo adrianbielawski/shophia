@@ -775,6 +775,84 @@ header select {
   border: 1px solid #ddd;
 }
 
+/*customers says*/
+
+.customers-says {
+  width: 1440px;
+  background: #d9bf8f;
+  display: grid;
+  grid-template-columns: 335px 385px 385px 335px;
+  display: -ms-grid;
+  -ms-grid-columns: 335px 385px 385px 335px;
+  -ms-grid-rows: 400px;
+  position: relative;
+}
+
+.customers-says::before {
+  content: "";
+  border-top: 30px solid #fff;
+  border-left: 182.5px solid transparent;
+  border-right: 182.5px solid transparent;
+  position: absolute;
+  left: 537.5px;
+}
+
+.customers-says img.left {
+  margin-left: 73px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.customers-says img.right {
+  width: 256px;
+  height: 397px; 
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.customers-says p {
+  font-style: italic;
+  color: #fff;
+  max-width: 280px;
+}
+
+.customers-says div.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  margin-top: 130px;
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+}
+
+.customers-says div.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 130px;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+}
+
+.customers-says p {
+  margin: 0 0 55px 0;
+  font-size: 1.3em;
+}
+
+.customers-says .name {
+  font-size: 2em;
+  color: #000;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.customers-says .occupation {
+  text-transform: uppercase;
+  color: #808080;
+  line-height: 2.5em;
+}
+
 /*media query*/
 
 @media only screen and (max-width: 1000px) {
