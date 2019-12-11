@@ -325,13 +325,14 @@ header select {
 
 .info-box .middle::before {
   content: "";
-  width: 390px;
-  border-left: 60px solid #fff;
-  border-right: 60px solid #fff;
-  border-top: 75px solid transparent;
-  border-bottom: 75px solid transparent;
+  width: 400px;
+  border-left: 40px solid #fff;
+  border-right: 40px solid #fff;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
   position: absolute;
-  left: 465px;
+  top: 0px;
+  left: 480px;
 }
 
 .info-box .right::before {
@@ -342,6 +343,7 @@ header select {
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
   position: absolute;
+  top: 0px;
   left: 465px;
 }
 
