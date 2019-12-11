@@ -584,6 +584,179 @@ header select {
   border: none;
 }
 
+/*summer collection*/
+
+.summer-collection {
+  width: 1254px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 345px 345px;
+  grid-gap: 18px;
+  display: -ms-grid;
+  -ms-grid-columns: 300px 18px 300px 18px 300px 18px 300px;
+  -ms-grid-rows: 345px 18px 345px;
+}
+
+.summer-collection .item {
+  width: 300px;
+  height: 345px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 150px 150px;
+  display: -ms-grid;
+  -ms-grid-columns: 300px;
+  -ms-grid-rows: 50% 50%;
+  position: relative;
+}
+
+.summer-collection .item:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+
+.summer-collection .item:nth-child(2) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+}
+
+.summer-collection .item:nth-child(3) {
+  -ms-grid-column: 5;
+  -ms-grid-row: 1;
+}
+
+.summer-collection .item:nth-child(4) {
+  -ms-grid-column: 7;
+  -ms-grid-row: 1;
+}
+
+.summer-collection .item:nth-child(5) {
+  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+}
+
+.summer-collection .item:nth-child(6) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+}
+
+.summer-collection .item:nth-child(7) {
+  -ms-grid-column: 5;
+  -ms-grid-row: 3;
+}
+
+.summer-collection .item:nth-child(8) {
+  -ms-grid-column: 7;
+  -ms-grid-row: 3;
+}
+
+.summer-collection img {
+  grid-column: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+}
+
+.summer-collection .item::before {
+  content: "";
+  width: 300px;
+  height: 345px;
+  background: #000;
+  opacity: 0.3;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  display: none;
+}
+
+.summer-collection .item:hover::before {
+  display: block;
+}
+
+.summer-collection .item:hover img {
+  transform: scale(1.2);
+  transition-duration: .5s;
+  z-index: -1;
+}
+
+.summer-collection button {
+  position: absolute;
+  bottom: 0px;
+  left: 95px;
+  width: 110px;
+  height: 45px;
+  padding: 0;
+  margin: 0 auto;
+  background: #f09d66;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.summer-collection button::before {
+  content: "";
+  width: 45px;
+  height: 0;
+  border-right: 45px solid  #f09d66;
+  border-top: 45px solid  transparent;
+  position: absolute;
+  left: -90px;
+  bottom: 0px;
+}
+
+.summer-collection button::after {
+  content: "";
+  width: 45px;
+  height: 0;
+  border-left: 45px solid  #f09d66;
+  border-top: 45px solid  transparent;
+  position: absolute;
+  left: 110px;
+  bottom: 0px;
+}
+
+.summer-collection .item:hover button{
+ background: #000;
+}
+
+.summer-collection .item:hover button::after {
+  border-left: 45px solid #000;
+  border-top: 45px solid transparent;
+  cursor: default;
+}
+
+.summer-collection .item:hover button::before {
+  border-right: 45px solid #000;
+  border-top: 45px solid none;
+  cursor: default;
+}
+
+.summer-collection .discount {
+  width: 60px;
+  height: 60px;
+  background: #feab12;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.9em;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.summer-collection span {
+  font-size: .5em;
+  margin-left: .1em;
+}
+
 /*media query*/
 
 @media only screen and (max-width: 1000px) {
