@@ -757,6 +757,24 @@ header select {
   margin-left: .1em;
 }
 
+/*our brands*/
+
+.brands {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1290px;
+  margin: 0 75px;
+}
+
+.brands a {
+  border: 1px solid #fff;
+}
+
+.brands a:hover {
+  border: 1px solid #ddd;
+}
+
 /*media query*/
 
 @media only screen and (max-width: 1000px) {
